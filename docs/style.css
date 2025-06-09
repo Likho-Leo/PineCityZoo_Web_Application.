@@ -47,14 +47,22 @@ body{
 /*Main Home Section*/
 #main-home {
     margin-top: 119px;
-    padding-bottom: 20px;
+    padding: 0;
     background-color: forestgreen;
+    overflow: hidden; /* this helps trim extra spacing if needed */
 }
+
+#main-home img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 
 
 /*Bottom Tabs Section*/
 #bottom-tabs{
-position: fixed;
+position: sticky;
 bottom: 0;
 left: 0;
 z-index: 500;
@@ -76,6 +84,12 @@ padding-top: none;
 }
 
 /*Footer*/
+footer {
+    background-image: url('images/wood-bg.png');
+    color: black;
+    font-weight: bold;
+}
+
 
 /*Animal Menu Section*/
 #main{
