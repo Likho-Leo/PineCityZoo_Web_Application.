@@ -45,12 +45,12 @@ body{
 }
 
 /*Main Home Section*/
-#main-home{
+#main-home {
     margin-top: 119px;
-    margin-bottom: -20px;
+    padding-bottom: 20px;
     background-color: forestgreen;
-    
 }
+
 
 /*Bottom Tabs Section*/
 #bottom-tabs{
