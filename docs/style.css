@@ -1,0 +1,231 @@
+/*Header Section*/
+body{
+    padding:0;
+    margin:0;
+    font-family: Helvetica;
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    height: 80px;
+    width: 100%;
+    background-image: url("images/wood-bg.png");
+    background-repeat: repeat-x;
+}
+
+#header img{
+    display: block;
+    margin: auto;
+    height: 70%;
+    padding-top: 15px;
+}
+
+/*Top tabs Section*/
+#top-tabs{
+    position: fixed;
+    top: 80px;
+    left: 0;
+    z-index: 500;
+    width: 100%;
+    height: 40px;
+    background-color:forestgreen;
+}
+
+#top-tabs a{
+    float: left;
+    display: block;
+    width: 33%;
+    height: 35px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+/*Main Home Section*/
+#main-home{
+    margin-top: 119px;
+    margin-bottom: -20px;
+    background-color: forestgreen;
+    
+}
+
+/*Bottom Tabs Section*/
+#bottom-tabs{
+position: fixed;
+bottom: 0;
+left: 0;
+z-index: 500;
+width: 100%;
+height: 40px;
+background-color: forestgreen;
+}
+
+#bottom-tabs a{
+float: left;
+display: block;
+width: 50%;
+height: 35px;
+font-weight: 700;
+color: white;
+text-align: center;
+text-decoration: none;
+padding-top: none;
+}
+
+/*Footer*/
+
+/*Animal Menu Section*/
+#main{
+    margin-top: 119px;
+    margin-bottom: -20px;
+    background-color: forestgreen;
+    background-image: url('images/map-blur.png');
+    background-repeat: repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+
+#content{
+    padding-top: 1px;
+    padding-bottom:50px;
+}
+
+a.info-box {
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.55);
+    width: 90%;
+    min-height: 90px;
+    display: block;
+    margin: 12px auto 0 auto;
+    padding: auto;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+a.info-box:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transform: scale(1.03);
+}
+
+
+.info-box img{
+    height: 70px;
+    margin: 10px;
+    float: left;
+}
+
+.info-box h3{
+    padding-top: 20px;
+    margin-bottom: 0;
+    width: 90%;
+    color: #572800;
+}
+
+.info-box p{
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    color: #572800;
+}
+
+.info-box img.right{
+    float: right;
+    margin-top: 25px;
+    height: 40px;
+}
+
+/*animal pages styling*/
+#info-box-full{
+    background-color: rgba(255, 255, 255, 0.553);
+    width : 90%;
+    display: flex;
+    margin: auto;
+    margin-top: 12px;
+    padding: 10px;
+}
+
+#info-box-full img {
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}
+
+/*weather section*/
+#info-box-weather{
+    background-color: rgba(255, 255, 255, 0.553);
+    width : 50%;
+    margin: auto;
+    padding: 10px;
+}
+
+img.info-box-weather-icon{
+height : 40px;
+width  : 40px;
+margin : 10px;
+float  :left;
+}
+h1.info-box-weather-icon{
+font-size  : 65px;
+font-weight: 200;
+padding    : 0;
+margin     : 0;
+}
+
+/*feedback section*/
+#info-box-feedback {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+#info-box-feedback img {
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px; /* more space to write */
+    resize: vertical;
+}
+
+.button {
+    display: inline-block;
+    background-color: forestgreen;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 0;
+    margin-top: 16px;
+    width: 100%;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #036403; /* slightly darker green on hover */
+}
