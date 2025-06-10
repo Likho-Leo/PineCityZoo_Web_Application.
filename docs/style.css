@@ -60,7 +60,7 @@ body{
 #main-home {
     margin-top: 119px;
     background-image: url('images/map-blur.png');
-    padding: 10px;
+    padding: 0;
     background-color: forestgreen;
     overflow: hidden; 
     background-size: cover;
