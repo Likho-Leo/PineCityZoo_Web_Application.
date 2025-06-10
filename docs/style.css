@@ -64,13 +64,14 @@ body{
     overflow: hidden; 
     background-size: cover;
     min-height: 100vh;
+    background-image: url('images/map.png');
 }
 
-#main-home img {
+/* #main-home img {
     display: block;
     width: 100%;
     height: auto;
-}
+} */
 
 /*Bottom Tabs Section*/
 #bottom-tabs{
