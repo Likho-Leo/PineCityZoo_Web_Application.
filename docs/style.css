@@ -59,12 +59,13 @@ body{
 /*Main Home Section*/
 #main-home {
     margin-top: 119px;
+    background-image: url('images/map.png');
     padding: 0;
     background-color: forestgreen;
     overflow: hidden; 
     background-size: cover;
     min-height: 100vh;
-    background-image: url('images/map.png');
+    
 }
 
 /* #main-home img {
