@@ -36,10 +36,19 @@
                                     We always strive to do best, so your feedback is very important to us.
                                     Please fill in the form below
                                 </p>
-                                <input type="text" placeholder="Your name" id="name">
-                                <input type="text" placeholder="Your email" id="email">
-                                <textarea placeholder="Type your message here"></textarea>
-                                <a class="button" href="messageReceived.html">SUBMIT</a>
+                                <form id="contactForm" class="needs-validation" novalidate>
+                                    <input type="text" placeholder="Your name" id="name" class="form-control mb-2" required>
+                                    <div class="invalid-feedback">Please enter your name.</div>
+
+                                    <input type="email" placeholder="Your email" id="email" class="form-control mb-2" required>
+                                    <div class="invalid-feedback">Please enter a valid email.</div>
+
+                                    <textarea placeholder="Type your message here" id="message" class="form-control mb-2" required></textarea>
+                                    <div class="invalid-feedback">Message cannot be empty.</div>
+
+                                    <button type="submit" class="btn btn-primary">SUBMIT</button>
+                                </form>
+
                             </div>
                         </div>
                     </div>
@@ -58,3 +67,22 @@
 
         </body>
 </html>
+
+<script>
+  (() => {
+    'use strict'
+
+    const form = document.getElementById('contactForm');
+
+    form.addEventListener('submit', function (e) {
+      if (!form.checkValidity()) {
+        e.preventDefault();
+        e.stopPropagation();
+      } else {
+        form.action = "messageReceived.html";
+      }
+
+      form.classList.add('was-validated');
+    });
+  })();
+</script>
